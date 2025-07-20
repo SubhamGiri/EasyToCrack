@@ -1,0 +1,23 @@
+<!-- <div [ngClass]="{ 'collapsed': isMobile, 'expanded': !isMobile }" class="collapsible-div"> --> 
+  <div class="collapsed">
+    
+  <div class="label-strip-wrapper">
+  <!-- Left Arrow -->
+  <button class="arrow-btn left" (click)="scrollLeft()">
+    <i class="fa fa-chevron-left"></i>
+  </button>
+
+  <!-- Label Container -->
+  <div #scrollContainer class="label-strip">
+    <label *ngFor="let label of labels" class="label-item">
+      {{ label }}
+    </label>
+  </div>
+
+  <!-- Right Arrow -->
+  <button class="arrow-btn right" (click)="scrollRight()">
+    <i class="fa fa-chevron-right"></i>
+  </button>
+</div>
+
+</div>

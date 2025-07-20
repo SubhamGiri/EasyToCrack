@@ -1,0 +1,47 @@
+<footer class="footer text-light py-4 px-3 ">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <button
+        class="btn btn-outline-light d-md-none"
+        type="button"
+        (click)="toggleFooterCollapse()"
+        aria-controls="footerCollapse"
+        [attr.aria-expanded]="isFooterOpen">
+        <i class="fa" [ngClass]="isFooterOpen ? 'fa-chevron-up' : 'fa-chevron-down'"></i>
+      </button>
+    </div>
+
+    <div [ngClass]="{ 'collapse': !isFooterOpen && isMobile, 'collapse show': isFooterOpen && isMobile }" id="footerCollapse">
+      <div class="row mt-3">
+        <div class="col-md-4 mb-3">
+          <h6>Java Topic</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Java</a></li>
+            <li><a href="#" class="text-light">Sprinb Boot</a></li>
+            <li><a href="#" class="text-light">Microservices</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6>Frontend Topic</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">HTML</a></li>
+            <li><a href="#" class="text-light">CSS</a></li>
+            <li><a href="#" class="text-light">JQuery</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6>Database</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">SQL</a></li>
+            <li><a href="#" class="text-light">MongoDB</a></li>
+            <li><a href="#" class="text-light">BigQuery</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-4 border-top pt-3">
+      <small>&copy; 2025 Your Company. All rights reserved.</small>
+    </div>
+  </div>
+</footer>

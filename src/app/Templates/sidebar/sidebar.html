@@ -1,0 +1,15 @@
+<button class="btn sideBarToggle" [ngClass]="{'btnCollapse': showToggleBtn}" (click)="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+</button>  
+<div #popup [ngClass]="{ 'collapsed': !sidebarOpen }">
+  <div class="sidebar">
+        <ul>
+            <li class="sideBarMenuOptions" *ngFor="let item of menuItems">
+                <a class="nav-link sidebar-link text-white d-flex align-items-center" href={{item.link}}>
+                    <i [class]="item.icon + ' me-2'"></i>
+                    <span class="sidebar-label" [class.collapsed]="!sidebarOpen">{{ item.label }}</span> 
+                </a>
+            </li>
+        </ul>
+  </div>
+</div>

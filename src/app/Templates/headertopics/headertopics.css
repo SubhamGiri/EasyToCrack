@@ -1,0 +1,95 @@
+/* .collapsible-div {
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #0b1231;
+  color: white;
+} */
+.collapsed {
+  background-color: #0b1231;
+  color: white;
+}
+
+
+.label-strip-wrapper {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-left: 100px;
+  margin-right: 10px;
+  height: 45px;
+}
+
+/* Arrow buttons */
+.arrow-btn {
+  background: white;
+  border: none;
+  font-size: 20px;
+  /* padding: 6px 10px; */
+  cursor: pointer;
+  z-index: 2;
+  color: #333;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  height: 30px;
+}
+
+.arrow-btn.left {
+  margin-left: 17%;
+}
+
+.arrow-btn.right {
+  margin-right: 17%;
+}
+
+/* Scrollable label container */
+.label-strip {
+  margin-left: 2%;
+  margin-right: 2%;
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  flex: 1;
+}
+
+.label-strip::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .label-item {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .arrow-btn {
+    font-size: 16px;
+    padding: 4px 8px;
+  }
+
+  .label-strip {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+    flex: 1;
+  }
+
+    .arrow-btn.left {
+        margin-left: 1%;
+    }
+    .arrow-btn.right {
+        margin-right: 2%;
+    }
+}
+
+.fa-chevron-right, .fa-chevron-left{
+    color: #0d173b;
+}

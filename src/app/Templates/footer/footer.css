@@ -1,0 +1,12 @@
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer button {
+  border: none;
+}
+
+.footer{
+    background-color: #0d173b;
+    margin-top: 3px;
+}

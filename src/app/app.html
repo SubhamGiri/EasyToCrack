@@ -1,0 +1,12 @@
+
+<app-header></app-header>
+<app-headertopics></app-headertopics>
+<div class="contain">
+    <div class="left-box">
+        <app-sidebar (sidebarEvent)="onSidebarEvent($event)"></app-sidebar>
+    </div>
+    <div class="right-box" [ngClass]="{'showFullScreen': !fullScreen}">
+      <app-main></app-main>
+    </div>
+</div>
+<app-footer></app-footer>
